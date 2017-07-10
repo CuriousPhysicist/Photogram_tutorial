@@ -17,6 +17,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'paperclip', '~> 4.3', '>= 4.3.6'
 gem 'simple_form'
 gem 'bootstrap-sass'
+gem 'devise'
 
 group :development, :test do
   gem 'byebug', platform: :mri
