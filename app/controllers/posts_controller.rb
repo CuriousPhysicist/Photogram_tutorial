@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 
 	before_action :authenticate_user!
 	before_action :set_post, only: [:show, :edit, :update, :destroy]
+	before_action :owned_post [:edit, :update, :destroy]
 
 
 	def index
@@ -13,8 +14,9 @@ class PostsController < ApplicationController
 	end
 
 	def create
+		@post = current_user.posts.build(post_params)
 
-		if @post = Post.create(post_params)
+		if @post.save
 			flash[:success] = "Your post has been created!"
 			redirect_to posts_path
 		else
@@ -59,4 +61,12 @@ class PostsController < ApplicationController
 	def post_params
 		params.require(:post).permit(:image, :caption)
 	end
+
+	def owned_post
+		unless current_user == @post.user.id
+			flash[:alert] = "That post does not belong to you!"
+			redirect_to root_path
+		end
+	end
+	
 end
