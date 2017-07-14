@@ -2,11 +2,12 @@ class PostsController < ApplicationController
 
 	before_action :authenticate_user!
 	before_action :set_post, only: [:show, :edit, :update, :destroy]
-	before_action :owned_post [:edit, :update, :destroy]
+	before_action :owned_post, only: [:edit, :update, :destroy]
 
 
 	def index
 		@posts = Post.all
+		@comment = Comment.new
 	end
 
 	def new
@@ -49,7 +50,6 @@ class PostsController < ApplicationController
 			flash.now[:error] = "Post failed to be removed. Please try again."
 			render :edit
 		end
-
 	end
 
 	private
@@ -68,5 +68,5 @@ class PostsController < ApplicationController
 			redirect_to root_path
 		end
 	end
-	
+
 end
