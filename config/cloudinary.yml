@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: curiouscollections
+  api_key: '152162566552494'
+  api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: curiouscollections
+  api_key: '152162566552494'
+  api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: curiouscollections
+  api_key: '152162566552494'
+  api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+  enhance_image_tag: true
+  static_image_support: false

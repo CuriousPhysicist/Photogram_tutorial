@@ -19,6 +19,9 @@ gem 'simple_form'
 gem 'bootstrap-sass'
 gem 'devise'
 
+gem 'carrierwave'
+gem 'cloudinary'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end

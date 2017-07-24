@@ -16,6 +16,7 @@ class PostsController < ApplicationController
 
 	def create
 		@post = current_user.posts.build(post_params)
+		Cloudinary::Uploader.upload(post_params[:image]) 
 
 		if @post.save
 			flash[:success] = "Your post has been created!"
