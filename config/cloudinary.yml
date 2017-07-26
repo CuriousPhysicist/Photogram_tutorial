@@ -1,40 +1,40 @@
 ---
 # below id the cloud attached to the Heroku app
-# development:
-#   cloud_name: hu986w9zs
-#   api_key: '859531535148367'
-#   api_secret: O_H4w96hp9EsnZo1J4d_QE2ip
-#   enhance_image_tag: true
-#   static_image_support: false
-# production:
-#   cloud_name: hu986w9zs
-#   api_key: '859531535148367'
-#   api_secret: O_H4w96hp9EsnZo1J4d_QE2ip
-#   enhance_image_tag: true
-#   static_image_support: true
-# test:
-#   cloud_name: hu986w9zs
-#   api_key: '859531535148367'
-#   api_secret: O_H4w96hp9EsnZo1J4d_QE2ip
-#   enhance_image_tag: true
-#   static_image_support: false
-
-# below is the cloud to use on localhost:3000
 development:
-  cloud_name: curiouscollections
-  api_key: '152162566552494'
-  api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+  cloud_name: hu986w9zs
+  api_key: '859531535148367'
+  api_secret: O_H4w96hp9EsnZo1J4d_QE2ip
   enhance_image_tag: true
   static_image_support: false
 production:
-  cloud_name: curiouscollections
-  api_key: '152162566552494'
-  api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+  cloud_name: hu986w9zs
+  api_key: '859531535148367'
+  api_secret: O_H4w96hp9EsnZo1J4d_QE2ip
   enhance_image_tag: true
   static_image_support: true
 test:
-  cloud_name: curiouscollections
-  api_key: '152162566552494'
-  api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+  cloud_name: hu986w9zs
+  api_key: '859531535148367'
+  api_secret: O_H4w96hp9EsnZo1J4d_QE2ip
   enhance_image_tag: true
   static_image_support: false
+
+# below is the cloud to use on localhost:3000
+# development:
+#   cloud_name: curiouscollections
+#   api_key: '152162566552494'
+#   api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+#   enhance_image_tag: true
+#   static_image_support: false
+# production:
+#   cloud_name: curiouscollections
+#   api_key: '152162566552494'
+#   api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+#   enhance_image_tag: true
+#   static_image_support: true
+# test:
+#   cloud_name: curiouscollections
+#   api_key: '152162566552494'
+#   api_secret: JySN0mEXkHU8FU7EqkqO_6xPHbg
+#   enhance_image_tag: true
+#   static_image_support: false
