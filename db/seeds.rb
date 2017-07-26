@@ -15,5 +15,5 @@ User.create!(
 User.create!(
 		user_name: "Guest",
 		email: "guest@example.com",
-		password: "Guest"
+		password: "Password"
 	)
