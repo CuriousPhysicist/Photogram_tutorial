@@ -11,7 +11,7 @@
 				</div>
 			</div>
 			<div class="image center-block">
-				<%= link_to (cl_image_tag post.image.url(:medium), :class => "img-responsive"), post_path(post) %>
+				<%= link_to (cl_image_tag "post_#{post.id}_image", :width => 640, :height => 640, :class => "img-responsive" ), post_path(post) %>
 			</div>
 			<div class="post-bottom">
 				<div class="caption">

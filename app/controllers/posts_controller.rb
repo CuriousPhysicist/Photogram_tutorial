@@ -16,9 +16,10 @@ class PostsController < ApplicationController
 
 	def create
 		@post = current_user.posts.build(post_params)
-		Cloudinary::Uploader.upload(post_params[:image], :crop => :limit, :width => 2000, :height => 2000,) 
+		 
 
 		if @post.save
+			Cloudinary::Uploader.upload(post_params[:image], :public_id => "post_#{@post.id}_image", :crop => :limit, :width => 2000, :height => 2000,)
 			flash[:success] = "Your post has been created!"
 			redirect_to posts_path
 		else
